@@ -41,7 +41,7 @@ class Solution(object):
         :rtype: List[int]
         """
         # 因为 数组中的数字都是正整数
-        # 使用类似于基数排序的方式，通过修改源数据的正负号来进行 Flag 的标识，如果源数据对应的坑已小于零，就说明数据已存在。
+        # 让我们可以使用类似于基数排序的方式，将元数据散列到新的空间上，如果重复出现的值，就添加到结果中 。
         res = []
         for x in nums:
             if nums[abs(x)-1] < 0:
@@ -49,6 +49,4 @@ class Solution(object):
             else:
                 nums[abs(x)-1] *= -1
         return res
-
-
 ```
