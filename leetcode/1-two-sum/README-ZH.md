@@ -51,10 +51,16 @@ Easy
 ### python3
 ```python3
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        data = {}
-        for i, x in enumerate(nums):
-            if target - x in data:
-                return [data[target-x], i]
-            data[x] = i
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        for i,x in enumerate(nums):
+            if target - x in nums:
+                i2 = nums.index(target - x)
+                if  i2 != i:
+                    return [i,i2]
+        
 ```
