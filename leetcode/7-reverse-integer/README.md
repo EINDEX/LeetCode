@@ -32,8 +32,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def reverse(self, x):
         """
@@ -52,6 +52,4 @@ class Solution:
         else:
             return res
         
-
-
 ```
