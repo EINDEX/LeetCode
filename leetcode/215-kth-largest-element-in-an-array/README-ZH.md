@@ -27,8 +27,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def findKthLargest(self, nums, k):
         """
@@ -38,5 +38,4 @@ class Solution:
         """
         nums.sort()
         return nums[-k]
-
 ```
