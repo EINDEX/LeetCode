@@ -77,4 +77,5 @@ class Solution:
                         res += x
             return res
         return get_res(T) == get_res(S)
+
 ```
