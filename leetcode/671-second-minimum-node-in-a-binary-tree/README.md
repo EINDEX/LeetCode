@@ -49,12 +49,10 @@ Easy
 #         self.val = val
 #         self.left = left
 #         self.right = right
-BIG_VALIE = 2**31
-
 class Solution:
 
     root_value = 0
-    second_min_value = BIG_VALIE
+    second_min_value = 2**32
 
     def findSecondMinimumValue(self, root: TreeNode) -> int:
         self.root_value = root.val
@@ -64,9 +62,8 @@ class Solution:
             if node.val != self.root_value:
                 if self.second_min_value > node.val:
                     self.second_min_value = node.val
-                return
             trive(node.left)
             trive(node.right)
         trive(root)
-        return -1 if self.second_min_value == BIG_VALIE else self.second_min_value
+        return -1 if self.second_min_value == 2**32 else self.second_min_value
 ```
