@@ -59,10 +59,8 @@ class Solution:
         root = TreeNode(postorder[-1])
         l = inorder.index(root.val)
         r = len(inorder) - l - 1
-        if l:
-            root.left = self.buildTree(inorder[:l], postorder[:l])
-        if r:
-            root.right = self.buildTree(inorder[l+1:], postorder[l:l+r])
+        root.left = self.buildTree(inorder[:l], postorder[:l])
+        root.right = self.buildTree(inorder[l+1:], postorder[l:l+r])
         return root
             
         
