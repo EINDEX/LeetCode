@@ -85,9 +85,11 @@ class Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        c = [x*x for x in A]
-        c.sort()
-        return c
+        for i in range(len(A)):
+            A[i] = A[i] ** 2
+        
+        A.sort()
+        return A
 
         
 
