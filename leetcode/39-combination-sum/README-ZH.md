@@ -63,8 +63,8 @@ These are the only two combinations.
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def combinationSum(self, candidates, target):
         """
@@ -84,5 +84,4 @@ class Solution:
         inner([],0, candidates, target)
         return res
         
-
 ```
