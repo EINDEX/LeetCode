@@ -30,8 +30,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def majorityElement(self, nums):
         """
@@ -51,5 +51,7 @@ class Solution:
                     majority = x
                     count = 0
         return majority
+
+
 
 ```
