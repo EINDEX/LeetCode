@@ -47,24 +47,25 @@ solution.shuffle();    // Returns the random shuffling of array [1,2,3]. Example
 
 
 ## Solution
-### python3
-```python3
-class Solution:
+### python
+```python
+import random
+
+class Solution(object):
 
     def __init__(self, nums):
         """
         :type nums: List[int]
+        :type size: int
         """
-        self.origin = nums[:]
-        self.nums = nums
-        
+        self.arr = nums
 
     def reset(self):
         """
         Resets the array to its original configuration and return it.
         :rtype: List[int]
         """
-        return self.origin
+        return self.arr
         
 
     def shuffle(self):
@@ -72,8 +73,13 @@ class Solution:
         Returns a random shuffling of the array.
         :rtype: List[int]
         """
-        import random
-        random.shuffle(self.nums)
-        return self.nums
+        l = self.arr[:]
+        random.shuffle(l)
+        return l
 
+
+# Your Solution object will be instantiated and called as such:
+# obj = Solution(nums)
+# param_1 = obj.reset()
+# param_2 = obj.shuffle()
 ```
