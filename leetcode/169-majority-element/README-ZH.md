@@ -30,28 +30,21 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def majorityElement(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums:
-            return 0
-        majority = nums[0]
-        count = 1
-        for x in nums[1:]:
-            if x == majority:
-                count += 1
+        value = 0
+        times = 0
+        for x in nums:
+            if times <= 0:
+                value = x
+                times += 1
             else:
-                count -= 1
-                if count < 0:
-                    majority = x
-                    count = 0
-        return majority
-
-
-
+                times = times - 1 if value != x else times + 1
+        return value
 ```
