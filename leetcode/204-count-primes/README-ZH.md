@@ -39,8 +39,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def countPrimes(self, n):
         """
@@ -65,4 +65,5 @@ class Solution:
         return sum(res)
                         
         
+
 ```
