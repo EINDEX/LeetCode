@@ -36,8 +36,8 @@ Hard
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -67,5 +67,4 @@ class Solution:
             res[0] += 1
         return res[0]
         
-
 ```
