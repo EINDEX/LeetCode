@@ -48,8 +48,8 @@ gridNew = [ [8, 4, 8, 7],
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def maxIncreaseKeepingSkyline(self, grid):
         """
@@ -71,5 +71,4 @@ class Solution:
             
             
         
-
 ```
