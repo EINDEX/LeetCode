@@ -48,18 +48,19 @@ Easy
 
 
 ## Solution
-### python3
-```python3
-class Solution:
+### python
+```python
+class Solution(object):
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-        data = {}
-        for i, x in enumerate(nums):
-            if target - x in data:
-                return [data[target-x], i]
-            data[x] = i
+        cache = {}
+        for i, val in enumerate(nums):
+            if val in cache:
+                return [cache[val], i]
+            else:
+                cache[target-val] = i
 ```
