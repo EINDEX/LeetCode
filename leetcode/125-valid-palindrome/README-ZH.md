@@ -34,8 +34,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def isPalindrome(self, s):
         """
@@ -64,5 +64,4 @@ class Solution:
             else:
                 return False
         return True
-
 ```
