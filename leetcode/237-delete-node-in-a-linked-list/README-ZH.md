@@ -61,6 +61,23 @@ Easy
 ## Solution
 ### python
 ```python
+#
+# [237] Delete Node in a Linked List
+#
+# https://leetcode-cn.com/problems/delete-node-in-a-linked-list/description/
+#
+# algorithms
+# Easy (36.55%)
+# Total Accepted:    1.9K
+# Total Submissions: 5.2K
+# Testcase Example:  '[0,1]\nnode at index 0 (node.val = 0)'
+#
+# 请编写一个函数，使其可以删除某个链表中给定的（非末尾的）节点，您将只被给予要求被删除的节点。
+# 
+# 比如：假设该链表为 1 -> 2 -> 3 -> 4  ，给定您的为该链表中值为 3 的第三个节点，那么在调用了您的函数之后，该链表则应变成 1 -> 2
+# -> 4 。
+# 
+#
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -78,6 +95,5 @@ class Solution(object):
         
         node.val = node.next.val
         node.next = node.next.next
-        
-        
+
 ```
