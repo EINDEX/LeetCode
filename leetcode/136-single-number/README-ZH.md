@@ -43,7 +43,6 @@ func singleNumber(nums []int) int {
 }
 
 
-
 ```
 ### python
 ```python
