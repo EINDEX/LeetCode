@@ -93,4 +93,6 @@ class Solution(object):
             else:
                 R=mid-1
         return L
+
+
 ```
