@@ -35,8 +35,8 @@ Medium
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     # Iteratively
     def subsets(self, nums):
@@ -44,5 +44,6 @@ class Solution:
         for num in sorted(nums):
             res += [item+[num] for item in res]
         return res
+
 
 ```
