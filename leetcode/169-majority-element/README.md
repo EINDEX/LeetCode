@@ -52,5 +52,4 @@ class Solution:
                     count = 0
         return majority
 
-
 ```
