@@ -64,5 +64,4 @@ class Solution(object):
         return ["%d %s" % (times,domain) for domain,times in res.items()]
             
         
-
 ```
