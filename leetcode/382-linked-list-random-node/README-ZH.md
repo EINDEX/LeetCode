@@ -86,4 +86,5 @@ class Solution(object):
 # obj = Solution(head)
 # param_1 = obj.getRandom()
 
+
 ```
