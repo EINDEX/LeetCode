@@ -64,7 +64,7 @@ class Solution:
             if node.val != self.root_value:
                 if self.second_min_value > node.val:
                     self.second_min_value = node.val
-                    return
+                return
             trive(node.left)
             trive(node.right)
         trive(root)
