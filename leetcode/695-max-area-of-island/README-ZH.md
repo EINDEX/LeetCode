@@ -47,22 +47,22 @@ class Solution:
         :type grid: List[List[int]]
         :rtype: int
         """
-        seen = set()
-        ans = 0
-        for r0, row in enumerate(grid):
-            for c0, val in enumerate(row):
-                if val and (r0, c0) not in seen:
-                    shape = 0
-                    stack = [(r0, c0)]
-                    seen.add((r0, c0))
-                    while stack:
-                        r, c = stack.pop()
-                        shape += 1
-                        for nr, nc in ((r-1, c), (r+1, c), (r, c-1), (r, c+1)):
-                            if (0 <= nr < len(grid) and 0 <= nc < len(grid[0])
-                                    and grid[nr][nc] and (nr, nc) not in seen):
-                                stack.append((nr, nc))
-                                seen.add((nr, nc))
-                    ans = max(ans, shape)
-        return ans
+        if not grid:
+            return 0
+        res = 0
+        h, w = len(grid), len(grid[0])
+        def area(x, y):
+            if x< 0 or x >= w or y <0 or y>=h:
+                return 0
+            if grid[y][x]:
+                grid[y][x] = 0
+                return area(x+1, y) + area(x-1,y) + area(x, y+1) + area(x, y-1) + 1
+            return 0
+        
+        for x in range(w):
+            for y in range(h):
+                if grid[y][x]:
+                    res = max(area(x, y), res)
+        return res
+                
 ```
