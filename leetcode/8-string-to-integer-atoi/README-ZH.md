@@ -116,8 +116,8 @@ Since -91283472332 is less than the lower bound of the range [-2<sup>31</sup>, 2
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def myAtoi(self, str):
         """
@@ -156,6 +156,5 @@ class Solution:
         
         return -res if is_low_of_zero else res
         
-
 
 ```
