@@ -40,9 +40,9 @@ Easy
 
 
 ## Solution
-### python3
-```python3
-class Solution:
+### python
+```python
+class Solution(object):
     def climbStairs(self, n):
         """
         :type n: int
