@@ -42,14 +42,10 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
-    def sortArrayByParityII(self, A):
-        """
-        :type A: List[int]
-        :rtype: List[int]
-        """
+    def sortArrayByParityII(self, A: List[int]) -> List[int]:
         if not A:
             return A
         a, b = 0, 1
