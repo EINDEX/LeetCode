@@ -45,8 +45,8 @@ recentCounter.ping(3002);  // requests = [1, <u>100</u>, <u>3001</u>, <u>3002</u
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class RecentCounter:
 
     def __init__(self):
@@ -67,5 +67,4 @@ class RecentCounter:
 # Your RecentCounter object will be instantiated and called as such:
 # obj = RecentCounter()
 # param_1 = obj.ping(t)
-
 ```
