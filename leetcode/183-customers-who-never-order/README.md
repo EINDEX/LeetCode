@@ -50,7 +50,7 @@ Easy
 select c.Name as Customers
 from Customers as c 
 where c.Id not in (
-    select distinct(CustomerId) 
+    select CustomerId
     from Orders 
 )
 ```
