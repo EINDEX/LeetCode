@@ -36,8 +36,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def longestCommonPrefix(self, strs):
         """
@@ -69,5 +69,6 @@ class Solution:
                     
                 
         
+
 
 ```
