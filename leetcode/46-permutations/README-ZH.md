@@ -29,8 +29,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def permute(self, nums):
         """
@@ -47,5 +47,4 @@ class Solution:
         
         inner([], nums)
         return res
-
 ```
