@@ -66,4 +66,5 @@ class Solution(object):
             if s[x] == s[x+1]:
                 return False
         return True
+
 ```
