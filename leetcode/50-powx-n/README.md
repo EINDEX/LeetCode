@@ -44,6 +44,11 @@ Medium
 ### python3
 ```python3
 class Solution:
+    d = {}
     def myPow(self, x: float, n: int) -> float:
-        return x ** n
+        if n == 0: return 1
+        if n == 1: return x
+        if n == -1: return 1/x
+        a, b = self.myPow(x, n //2), self.myPow(x,  n%2)
+        return a*a*b
 ```
