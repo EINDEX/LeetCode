@@ -58,8 +58,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def isPowerOfTwo(self, n):
         """
@@ -67,5 +67,4 @@ class Solution:
         :rtype: bool
         """
         return n > 0 and not (n & (n - 1))
-
 ```
