@@ -39,8 +39,8 @@ increasing.
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def findLengthOfLCIS(self, nums):
         """
@@ -63,7 +63,5 @@ class Solution:
             tmp = nums[x]
         return res
             
-
-
 
 ```
