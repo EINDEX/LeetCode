@@ -57,7 +57,7 @@ public class Solution extends GuessGame {
         int L=1,R=n;
         int res=0;
         while(L<=R){
-            int mid= R-((R-L)>>1);
+            int mid= L+((R-L)>>1);
             res=guess(mid);
             if(res==0)return mid;
             else if(res==1)L=mid+1;
@@ -93,6 +93,5 @@ class Solution(object):
             else:
                 R=mid-1
         return L
-
 
 ```
