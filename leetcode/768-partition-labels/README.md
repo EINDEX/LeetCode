@@ -38,8 +38,8 @@ A partition like &quot;ababcbacadefegde&quot;, &quot;hijhklij&quot; is incorrect
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def partitionLabels(self, S):
         """
@@ -62,5 +62,4 @@ class Solution:
         else:
             res.append(len(S))
         return res
-
 ```
