@@ -45,8 +45,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def plusOne(self, digits):
         """
@@ -66,5 +66,6 @@ class Solution:
             return [1] + digits
         else:
             return digits
+
 
 ```
