@@ -68,34 +68,25 @@ class Solution:
         :type s: str
         :rtype: bool
         """
+        t = {
+            ')': '(',
+            ']': '[',
+            '}': '{'
+        }
         stack = []
-        for x in s:
-            if x == ']':
-                if not stack:
-                    return False
-                if stack[-1] == '[':
+        flag = True
+        for x in range(len(s)):
+            if s[x] in t:
+                if stack:
+                    if stack[-1] == t[s[x]]:
                         stack.pop(-1)
+                    else:
+                        return False
                 else:
-                        return False
-            elif x == '}':
-                    if not stack:
-                        return False
-                    if stack[-1] == '{':
-                        stack.pop(-1)
-                    else:
-                        return False
-            elif x == ')':
-                    if not stack:
-                        return False
-                    if stack[-1] == '(':
-                        stack.pop(-1)
-                    else:
-                        return False
-            
+                    return False
             else:
-                stack.append(x)
+                stack.append(s[x])
         if stack:
             return False
         return True
-        
 ```
