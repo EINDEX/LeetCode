@@ -44,8 +44,8 @@ The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above)
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def minimumTotal(self, triangle):
         """
@@ -56,4 +56,5 @@ class Solution:
             for x in range(len(triangle[l])):
                 triangle[l][x] += min(triangle[l+1][x], triangle[l+1][x+1])
         return triangle[0][0]
+
 ```
