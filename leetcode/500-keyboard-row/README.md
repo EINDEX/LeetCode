@@ -60,5 +60,4 @@ class Solution(object):
         f = lambda x,y : set(x.lower()).issubset(y)
         return  [w for w in words if f(w,a) or f(w,b) or f(w,c)]
         
-
 ```
