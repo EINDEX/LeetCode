@@ -61,5 +61,4 @@ class Solution(object):
             return 1
         return max([self.maxDepth(c)+1 for c in root.children])
             
-
 ```
