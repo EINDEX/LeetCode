@@ -17,11 +17,10 @@ class Solution:
             if not node:
                 return
             if len(res) < depth:
-                res.append(node.val)
-            else:
-                res[depth-1] = max(res[depth-1], node.val)
+                res.append([])
+            res[depth-1].append(node.val)
             inner(node.left,depth+1)
             inner(node.right,depth+1)
         inner(root)
-        return res
+        return [max(x) for x in res]
         
