@@ -62,7 +62,7 @@ class Solution:
         if l:
             root.left = self.buildTree(preorder[1:1+l],inorder[:l])
         if r:
-            root.right = self.buildTree(preorder[1+l:],inorder[l+1:])
+            root.right = self.buildTree(preorder[-r:],inorder[-r:])
         return root
             
         
