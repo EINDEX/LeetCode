@@ -84,6 +84,4 @@ class Solution:
             if nums[x-1] > 0:
                 nums[x] += nums[x-1]
         return max(nums)
-        
-
 ```
