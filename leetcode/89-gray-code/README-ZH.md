@@ -52,3 +52,15 @@ The binary representation of [0,1,3,2] is [00,01,11,10].
 
 
 ## Solution
+### python
+```python
+class Solution:
+    def grayCode(self, n):
+        """
+        :type n: int
+        :rtype: List[int]
+        """
+        return [i ^ (i >> 1) for i in range(1 << n)]
+        
+
+```
