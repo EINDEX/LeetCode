@@ -47,3 +47,9 @@ For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
 
 
 ## Solution
+### python3
+```python3
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        return [sum([1 for i in nums if i < n]) for n in nums]
+```
