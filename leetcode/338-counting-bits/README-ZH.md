@@ -58,9 +58,6 @@ class Solution(object):
         :type num: int
         :rtype: List[int]
         """
-        list = [0]
-        while num > len(list) - 1:
-            list += [a + 1 for a in list]
-        return list[0 : num + 1]
-        
+        return [ bin(x).count('1') for x in xrange(num+1)]
+
 ```
