@@ -36,5 +36,6 @@ class Solution:
         :type k: int
         :rtype: int
         """
-        return sorted(nums)[-k]
+        nums.sort()
+        return nums[-k]
 ```
