@@ -31,8 +31,8 @@ Medium
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def generateMatrix(self, n):
         A = [[0] * n for _ in range(n)]
@@ -45,4 +45,5 @@ class Solution:
             j += dj
         return A
         
+
 ```
