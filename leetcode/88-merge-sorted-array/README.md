@@ -56,8 +56,8 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def merge(self, nums1, m, nums2, n):
         """
@@ -70,4 +70,5 @@ class Solution:
         nums1[m:] = nums2
         nums1.sort()
         
+
 ```
