@@ -50,8 +50,8 @@ Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def flipAndInvertImage(self, A):
         """
@@ -60,5 +60,4 @@ class Solution:
         """
         return [[0 if i==1 else 1 for i in line[::-1]] for line in A]
         
-
 ```
