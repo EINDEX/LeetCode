@@ -57,8 +57,10 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        for i,a in enumerate(nums):
-            for j,b in enumerate(nums[i+1:]):
-                if target== a+b:
-                    return [i,j+i+1]
+        cache = {}
+        for i, val in enumerate(nums):
+            if val in cache:
+                return [cache[val], i]
+            else:
+                cache[target-val] = i
 ```
