@@ -61,8 +61,8 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def removeDuplicates(self, nums):
         """
@@ -78,5 +78,6 @@ class Solution:
             else:
                 x = n
         return len(nums)
+
 
 ```
