@@ -24,8 +24,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution(object):
     def generateParenthesis(self, N):
         if N == 0: return ['']
@@ -37,5 +37,4 @@ class Solution(object):
         return ans
             
         
-
 ```
