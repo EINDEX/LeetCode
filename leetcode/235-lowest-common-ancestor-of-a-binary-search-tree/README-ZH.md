@@ -63,14 +63,22 @@ class Solution:
         :type q: TreeNode
         :rtype: TreeNode
         """
-        if (p.val <= root.val <= q.val) or (p.val >= root.val >= q.val):
-            return root
+        def get_path(path, node, target):
+            path.append(node)
+            if node.val == target.val:
+                return path
+            elif node.val > target.val:
+                return get_path(path, node.left, target)
+            else:
+                return get_path(path, node.right, target)
         
-        elif p.val < root.val and q.val < root.val:
-            return self.lowestCommonAncestor(root.left, p, q)
-        
-        else:
-            return self.lowestCommonAncestor(root.right, p, q)
-        
+        p1 = get_path([], root, p)
+        p2 = get_path([], root, q)
+        x = 0
+        while len(p1) > x and len(p2) > x:
+            if p1[x].val != p2[x].val:
+                break
+            x += 1
+        return p1[x-1]
             
 ```
