@@ -59,6 +59,4 @@ class Solution(object):
         :rtype: List[int]
         """
         return [ bin(x).count('1') for x in xrange(num+1)]
-
-
 ```
