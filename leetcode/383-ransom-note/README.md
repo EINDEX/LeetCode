@@ -40,4 +40,6 @@ class Solution(object):
         :rtype: bool
         """
         return not collections.Counter(ransomNote) - collections.Counter(magazine)
+
+
 ```
