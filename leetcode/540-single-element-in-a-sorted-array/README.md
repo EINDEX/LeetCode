@@ -37,4 +37,6 @@ class Solution(object):
         # Python3 里 reduce 移动到 functiontools 里了
         return reduce(lambda x,n:x^n ,nums)
         
+
+
 ```
