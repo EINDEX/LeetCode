@@ -45,7 +45,11 @@ Easy
 ### python3
 ```python3
 class Solution:
-    def sortArrayByParityII(self, A: List[int]) -> List[int]:
+    def sortArrayByParityII(self, A):
+        """
+        :type A: List[int]
+        :rtype: List[int]
+        """
         if not A:
             return A
         a, b = 0, 1
@@ -59,5 +63,4 @@ class Solution:
                     A[a], A[b] = A[b], A[a]
         return A    
         
-
 ```
