@@ -36,22 +36,25 @@ Easy
 ## Solution
 ### python
 ```python
-class Solution(object):
+class Solution:
     def fizzBuzz(self, n):
         """
         :type n: int
         :rtype: List[str]
         """
-        ans = []
-        for x in xrange(1,n+1):
-            a = ''
-            if not x % 3:
-                a += 'Fizz'
-            if not x % 5:
-                a += 'Buzz'
-            if not a:
-                a = str(x)
-            ans.append(a)
-        return ans
-        
+        res = []
+        for x in range(1, n+1):
+            if x % 15 == 0:
+                res.append("FizzBuzz")
+            elif x % 5 == 0:
+                res.append("Buzz")
+            elif x % 3 == 0:
+                res.append("Fizz")
+            else:
+                res.append(str(x))
+            
+            
+        return res
+
+
 ```
