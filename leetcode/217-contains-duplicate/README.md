@@ -28,8 +28,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def containsDuplicate(self, nums):
         """
@@ -38,4 +38,6 @@ class Solution:
         """
         return len(set(nums)) < len(nums)
         
+
+
 ```
