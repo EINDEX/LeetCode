@@ -64,23 +64,11 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        fast = head
-        slow = head
-        while fast and slow:
-            if slow.next and fast.next and fast.next.next:
-                slow = slow.next
-                fast = fast.next.next
-                if fast == slow:
-                    break
-            else:
-                return
-        p = head
-        while p and slow:
-            if p == slow:
-                return p
-            p = p.next
-            slow = slow.next
-        return p
-            
-            
+        s = set()
+        while head:
+            if head in s:
+                return head
+            s.add(head)
+            head = head.next
+        return
 ```
