@@ -67,8 +67,8 @@ All 3 columns are not sorted, so you will delete all 3.
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def minDeletionSize(self, A):
         """
@@ -86,4 +86,5 @@ class Solution:
         return len(D)
             
                 
+
 ```
