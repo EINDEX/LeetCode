@@ -34,8 +34,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def isPowerOfThree(self, n):
         """
@@ -50,4 +50,5 @@ class Solution:
             return True
         else:
             return False
+
 ```
