@@ -65,8 +65,8 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def removeElement(self, nums, val):
         """
@@ -81,4 +81,5 @@ class Solution:
                 for x in range(i ,len(nums) -1):
                     nums[x], nums[x+1] = nums[x+1], nums[x]
         return len(nums) - cal
+
 ```
