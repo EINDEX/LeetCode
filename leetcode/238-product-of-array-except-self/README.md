@@ -58,5 +58,4 @@ class Solution(object):
             return l
         return [res/s for s in nums]
 
-
 ```
