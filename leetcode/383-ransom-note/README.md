@@ -41,5 +41,4 @@ class Solution(object):
         """
         return not collections.Counter(ransomNote) - collections.Counter(magazine)
 
-
 ```
