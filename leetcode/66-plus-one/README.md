@@ -66,5 +66,4 @@ class Solution:
             return [1] + digits
         else:
             return digits
-
 ```
