@@ -46,7 +46,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        nums.sort()
-        return sum([min(nums[k],nums[k+1]) for k in range(0,len(nums),2)])
+        return sum(sorted(nums)[::2])
     
+
+
 ```
