@@ -35,8 +35,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def mySqrt(self, x):
         """
@@ -58,8 +58,6 @@ class Solution:
             else:
                 return mid
         return (l+h) // 2
-
-
 
 
 ```
