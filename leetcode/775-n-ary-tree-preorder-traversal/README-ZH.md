@@ -65,5 +65,4 @@ class Solution(object):
             for c in root.children:
                 res += self.preorder(c)      
         return res
-
 ```
