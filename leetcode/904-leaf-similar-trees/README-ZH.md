@@ -61,8 +61,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -84,4 +84,5 @@ class Solution:
                 return [node.val]
             return get_leaf_list(node.left) + get_leaf_list(node.right)
         return get_leaf_list(root1) == get_leaf_list(root2)
+
 ```
