@@ -48,5 +48,4 @@ class Solution:
                 return i
         else:
             return -1
-
 ```
