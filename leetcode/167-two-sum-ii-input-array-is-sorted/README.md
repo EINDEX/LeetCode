@@ -47,8 +47,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def twoSum(self, numbers, target):
         """
@@ -56,14 +56,9 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        i1 = 0
-        i2 = len(numbers) - 1
-        while i1 < i2:
-            if numbers[i1] + numbers[i2] > target:
-                i2 -= 1
-            elif numbers[i1] + numbers[i2] < target:
-                i1 += 1
-            else:
-                return [i1+1, i2+1]
-
+        data = {}
+        for i, x in enumerate(numbers):
+            if x in data:
+                return [data[x]+1, i+1]
+            data[target-x] = i
 ```
