@@ -66,8 +66,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def escapeGhosts(self, ghosts, target):
         """
@@ -80,5 +80,4 @@ class Solution:
             if abs(x[0]-target[0]) + abs(x[1]-target[1]) <= l:
                 return False
         return True
-
 ```
