@@ -46,8 +46,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -79,5 +79,4 @@ class Solution:
                     flag = True
         return root
         
-
 ```
