@@ -36,16 +36,18 @@ class Solution:
         :rtype: str
         """
         yuan = ('a', 'e', 'i', 'o', 'u', 'A','E','I','O', 'U')
-        r = []
-        for x in range(len(s)):
-            if s[x] in yuan:
-                r.append(s[x])
-        k = 1
         s = list(s)
-        for x in range(len(s)):
-            if s[x] in yuan:
-                s[x] = r[-k]
-                k += 1
+        a, b = 0, len(s) - 1
+        while a < b:
+            if s[a] not in yuan:
+                a += 1
+                continue
+            if s[b] not in yuan:
+                b -= 1
+                continue
+            s[a], s[b] = s[b],  s[a]
+            a += 1
+            b -= 1
         return ''.join(s)
         
         
