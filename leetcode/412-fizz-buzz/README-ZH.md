@@ -34,8 +34,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def fizzBuzz(self, n):
         """
@@ -55,6 +55,5 @@ class Solution:
             
             
         return res
-
 
 ```
