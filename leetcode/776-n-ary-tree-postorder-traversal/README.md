@@ -61,5 +61,4 @@ class Solution(object):
                 res += self.postorder(c)
         res.append(root.val)
         return res
-
 ```
