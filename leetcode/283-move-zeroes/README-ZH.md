@@ -29,8 +29,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def moveZeroes(self, nums):
         """
@@ -49,4 +49,5 @@ class Solution:
                 nums[i], nums[zi] = nums[zi], nums[i]
                 while zi<len(nums) and  nums[zi]:
                     zi += 1
+
 ```
