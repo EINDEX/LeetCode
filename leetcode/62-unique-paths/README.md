@@ -55,8 +55,8 @@ From the top-left corner, there are a total of 3 ways to reach the bottom-right 
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 from functools import reduce
 class Solution:
     def uniquePaths(self, m, n):
@@ -69,5 +69,4 @@ class Solution:
         return int(a(m+n-2)/(a(m-1)*a(n-1)))
         
         
-
 ```
