@@ -28,8 +28,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def numJewelsInStones(self, J, S):
         """
@@ -37,8 +37,7 @@ class Solution:
         :type S: str
         :rtype: int
         """
-        return sum([S.count(x) for x in J])
+        return sum([S.count(j) for j in J])
             
         
-
 ```
