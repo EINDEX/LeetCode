@@ -41,8 +41,8 @@ You need to output 2.
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def findContentChildren(self, g, s):
         """
@@ -60,6 +60,7 @@ class Solution:
                     count += 1
                     break
         return count
+
 
 
 ```
