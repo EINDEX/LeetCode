@@ -28,8 +28,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def isAnagram(self, s, t):
         """
@@ -52,6 +52,5 @@ class Solution:
                     return False
                 d[i] -= 1
         return True
-
 
 ```
