@@ -45,4 +45,5 @@ class Solution(object):
         :rtype: int
         """
         return num ^ (2 ** (len(bin(num)) - 2) -1)
+
 ```
