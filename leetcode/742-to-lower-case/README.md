@@ -39,8 +39,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def toLowerCase(self, str):
         """
@@ -49,5 +49,4 @@ class Solution:
         """
         return str.lower()
         
-
 ```
