@@ -45,8 +45,7 @@ string ans = obj.decode(tiny); // returns the original url after deconding it.
 ### python
 ```python
 class Codec:
-    
-    url_list = []
+    hash_list=[]
 
     def encode(self, longUrl):
         """Encodes a URL to a shortened URL.
@@ -54,11 +53,8 @@ class Codec:
         :type longUrl: str
         :rtype: str
         """
-        if longUrl not in self.url_list:
-            self.url_list.append(longUrl)
-            return len(self.url_list) - 1
-        else:
-            return self.url_list.index(longUrl)
+        self.hash_list.append(longUrl)
+        return 'http://tinyurl.com/%s' % str(len(self.hash_list)-1)
         
 
     def decode(self, shortUrl):
@@ -67,12 +63,10 @@ class Codec:
         :type shortUrl: str
         :rtype: str
         """
-        return self.url_list[shortUrl]
+        return self.hash_list[int(shortUrl.replace('http://tinyurl.com/',''))]
         
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()
 # codec.decode(codec.encode(url))
-
-
 ```
