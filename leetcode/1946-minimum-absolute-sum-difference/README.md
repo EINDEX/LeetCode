@@ -60,7 +60,5 @@ This yields an absolute sum difference of <code>|10-9| + |10-3| + |4-5| + |4-1| 
 </ul>
 
 
-## Solution
 
-## Author
-EINDEX
+## Solution
