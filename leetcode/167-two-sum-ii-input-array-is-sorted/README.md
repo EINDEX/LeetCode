@@ -56,9 +56,13 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        data = {}
-        for i, x in enumerate(numbers):
-            if target - x in data:
-                return [data[target-x]+1, i+1]
-            data[x] = i
+        i1 = 0
+        i2 = len(numbers) - 1
+        while i1 < i2:
+            if numbers[i1] + numbers[i2] > target:
+                i2 -= 1
+            elif numbers[i1] + numbers[i2] < target:
+                i1 += 1
+            else:
+                return [i1+1, i2+1]
 ```
