@@ -37,8 +37,8 @@ Medium
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def minPathSum(self, grid):
         """
@@ -55,4 +55,5 @@ class Solution:
             for j in range(1, w):
                 grid[i][j] += min(grid[i-1][j], grid[i][j-1])
         return grid[-1][-1]
+
 ```
