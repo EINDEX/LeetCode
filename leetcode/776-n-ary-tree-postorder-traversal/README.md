@@ -59,6 +59,6 @@ class Solution(object):
         if root.children:
             for c in root.children:
                 res += self.postorder(c)
-        res+=[root.val]
+        res.append(root.val)
         return res
 ```
