@@ -60,8 +60,8 @@ Medium
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def allPathsSourceTarget(self, graph):
         """
@@ -82,4 +82,5 @@ class Solution:
         
         return inner(0)
         
+
 ```
