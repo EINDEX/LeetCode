@@ -57,6 +57,4 @@ class Solution(object):
                 p = p.next
         return head
 
-
-
 ```
