@@ -52,8 +52,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def judgeCircle(self, moves):
         """
@@ -62,6 +62,5 @@ class Solution:
         """
         return moves.count('L') == moves.count('R') and moves.count('U') == moves.count('D')
         
-
 
 ```
