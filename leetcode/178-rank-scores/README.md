@@ -50,4 +50,5 @@ left join
      from scores order by score desc) as ss, (SELECT @row_number:=0) as t) as sr 
 on s.score = sr.score 
 order by Rank
+
 ```
