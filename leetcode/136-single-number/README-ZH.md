@@ -42,7 +42,6 @@ func singleNumber(nums []int) int {
 	return res
 }
 
-
 ```
 ### python3
 ```python3
