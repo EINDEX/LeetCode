@@ -49,8 +49,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def peakIndexInMountainArray(self, A):
         """
@@ -60,4 +60,5 @@ class Solution:
         for i in range(len(A)):
             if A[i] > A[i+1]:
                 return i
+
 ```
