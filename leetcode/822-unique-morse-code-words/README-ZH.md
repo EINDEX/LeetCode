@@ -58,8 +58,8 @@ There are 2 different transformations: &quot;--...-.&quot; and &quot;--...--.&qu
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def uniqueMorseRepresentations(self, words):
         """
@@ -74,4 +74,5 @@ class Solution:
         return len(res_set)
             
         
+
 ```
