@@ -41,8 +41,8 @@ Since &quot;d&quot; does not appear in order, it can be at any position in the r
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def customSortString(self, S, T):
         """
@@ -55,5 +55,4 @@ class Solution:
             data[i]=T.count(k)
             T = T.replace(k, '')
         return ''.join([S[i]*k for i, k in enumerate(data)]) + T
-
 ```
