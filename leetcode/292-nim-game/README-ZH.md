@@ -61,4 +61,5 @@ class Solution(object):
         :rtype: bool
         """
         return bool(n&3)
+
 ```
