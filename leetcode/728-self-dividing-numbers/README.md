@@ -32,8 +32,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def selfDividingNumbers(self, left, right):
         """
@@ -46,5 +46,4 @@ class Solution:
             if all([i!='0' and x%int(i)==0 for i in list(str(x))]):
                 res.append(x)
         return res
-
 ```
