@@ -50,8 +50,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def maxArea(self, height):
         """
@@ -72,5 +72,4 @@ class Solution:
                 j -= 1
         return m
         
-
 ```
