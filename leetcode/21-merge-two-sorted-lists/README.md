@@ -49,6 +49,7 @@ Easy
 #         self.next = None
 
 class Solution:
+    
     def mergeTwoLists(self, l1, l2):
         """
         :type l1: ListNode
@@ -75,6 +76,4 @@ class Solution:
             l1 = l1.next 
                         
         return head
-                
-        
 ```
