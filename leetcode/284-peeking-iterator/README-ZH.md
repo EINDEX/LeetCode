@@ -49,8 +49,8 @@ peekingIterator.hasNext(); // return False
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 # Below is the interface for Iterator, which is already defined for you.
 #
 # class Iterator:
@@ -116,4 +116,5 @@ class PeekingIterator:
 # while iter.hasNext():
 #     val = iter.peek()   # Get the next element but not advance the iterator.
 #     iter.next()         # Should return the same value as [val].
+
 ```
