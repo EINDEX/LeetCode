@@ -48,5 +48,4 @@ class Solution:
         """
         return s[::-1]
         
-
 ```
