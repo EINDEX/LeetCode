@@ -55,8 +55,8 @@ Note that in particular, &quot;zzxy&quot; is not special equivalent to &quot;zzy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def numSpecialEquivGroups(self, A):
         """
@@ -66,8 +66,9 @@ class Solution:
         # 将字符串单数位和偶数位分别排序组成一个新串检测是否出现过
         r =  set()
         for w in A:
-            c = "".join(sorted([w[x] for x in range(len(w)) if x % 2]) + sorted([w[x] for x in range(len(w)) if x % 2 == 0]))
+            c = "".join(sorted(w[0::2]) + sorted(w[1::2]))
             if c not in r:
                 r.add(c)
         return len(r)
+
 ```
