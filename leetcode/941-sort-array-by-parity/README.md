@@ -32,16 +32,15 @@ The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def sortArrayByParity(self, A):
         """
         :type A: List[int]
         :rtype: List[int]
         """
-        res = [i for i in A if i % 2 == 0]
-        res += [i for i in A if i % 2 == 1]
-        return res
+        return [i for i in A if i % 2 == 0] + [i for i in A if i % 2 == 1]
         
+
 ```
