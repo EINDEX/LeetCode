@@ -47,20 +47,9 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        info = []
-        def dfs(node, depth=0):
-            if node is None:
-                return
-            if len(info) <= depth:
-                info.append(None)
-            if info[depth] is None:
-                info[depth] = node.val
-            dfs(node.left, depth + 1)
-            dfs(node.right, depth + 1)
-            
-        dfs(root)
-        for x in info[::-1]:
-            if x is not None:
-                return x
+        queue = [root]
+        for node in queue:
+            queue += filter(None, (node.right, node.left))
+        return node.val
         
 ```
