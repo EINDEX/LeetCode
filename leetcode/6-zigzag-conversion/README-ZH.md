@@ -62,12 +62,11 @@ P     I
 ### golang
 ```golang
 func convert(s string, numRows int) string {
-    if numRows == 1 || len(s) < numRows {
-        return s
-    }
     rows := make([]string, numRows)
     index, godown := 0, true
-
+    if numRows == 1{
+        return s
+    }
     for _, x := range s {
         rows[index] += string(x)
         if godown {
