@@ -38,12 +38,9 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        num_dict=collections.Counter(nums)
-        return sorted(num_dict,key=num_dict.get,reverse=True)[:k]
+        return sorted(collections.Counter(nums),key=collections.Counter(nums).get,reverse=True)[:k]
 
 
             
         
-
-
 ```
