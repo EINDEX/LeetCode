@@ -42,7 +42,7 @@ Easy
 ## Solution
 ### python
 ```python
-class Solution(object):
+class Solution:
     def climbStairs(self, n):
         """
         :type n: int
@@ -52,4 +52,5 @@ class Solution(object):
         for _ in range(n):
             a, b = b, a+b
         return b
+
 ```
