@@ -58,7 +58,7 @@ class Solution:
         """
         data = {}
         for i, x in enumerate(numbers):
-            if x in data:
-                return [data[x]+1, i+1]
-            data[target-x] = i
+            if target - x in data:
+                return [data[target-x]+1, i+1]
+            data[x] = i
 ```
