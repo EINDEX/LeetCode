@@ -57,4 +57,6 @@ class Solution(object):
             l[index] = res
             return l
         return [res/s for s in nums]
+
+
 ```
