@@ -28,8 +28,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def firstUniqChar(self, s):
         """
@@ -48,6 +48,4 @@ class Solution:
                 return i
         else:
             return -1
-
-
 ```
