@@ -44,6 +44,5 @@ class Solution(object):
         :type num: int
         :rtype: int
         """
-        return num ^ (2 ** (len(bin(num)) - 2) -1)
-
+        return num ^ ((1<<num.bit_length())-1)
 ```
