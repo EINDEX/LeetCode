@@ -42,7 +42,7 @@ Easy
 ## Solution
 ### python
 ```python
-class Solution:
+class Solution(object):
     def climbStairs(self, n):
         """
         :type n: int
