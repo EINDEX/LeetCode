@@ -47,7 +47,8 @@ class Solution:
         :type A: List[List[int]]
         :rtype: List[List[int]]
         """
-        return [[A[x][y] for x in range(len(A))] for y in range(len(A[0]))]
+        res = [[A[x][y] for x in range(len(A))] for y in range(len(A[0]))]
+        return res
         
         
 ```
