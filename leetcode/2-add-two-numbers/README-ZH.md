@@ -43,8 +43,8 @@ Medium
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -91,4 +91,5 @@ class Solution:
                 flag = t // 10
                 p =  p.next
         return head
+
 ```
