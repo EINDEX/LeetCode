@@ -45,7 +45,8 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        for x in range(len(s)//2):
-            s[x], s[-x-1] = s[-x-1],s[x] 
+        l = len(s)
+        for x in range(l//2):
+            s[x], s[l-x-1] = s[l-x-1],s[x] 
         
 ```
