@@ -41,13 +41,11 @@ public class Solution {
 ### python3
 ```python3
 class Solution:
-    def reverseString(self, s: List[str]) -> None:
+    def reverseString(self, s):
         """
-        Do not return anything, modify s in-place instead.
+        :type s: str
+        :rtype: str
         """
-        l, h = 0, len(s)-1
-        while l < h:
-            s[l], s[h] = s[h], s[l]
-            l, h = l+1, h-1
+        return s[::-1]
         
 ```
