@@ -59,5 +59,4 @@ class Solution(object):
                 num_set.remove(n)
         return list(num_set)
 
-
 ```
