@@ -69,33 +69,17 @@ Note that only one of the two unmatched 1s is counted as a cow since the non-bul
 ### python3
 ```python3
 class Solution:
-    def getHint(self, secret, guess):
-        """
-        :type secret: str
-        :type guess: str
-        :rtype: str
-        """
-        A = 0
-        sa = []
-        sb = []
-        for a, b in zip(secret, guess):
-            if a == b:
-                A += 1
-            if a != b:
-                sa.append(a)
-                sb.append(b)
-        sa.sort()
-        sb.sort()
-        B = 0
-        i, j  = 0, 0
-        while i < len(sa) and j < len(sb):
-            if sa[i] == sb[j]:
-                B+=1
-                i+=1
-                j+=1
-            elif  sa[i] < sb[j]:
-                i +=1
+    def getHint(self, secret: str, guess: str) -> str:
+        a = [0 for _ in range(10)]
+        b = [0 for _ in range(10)]
+        bulls = 0
+        for x in range(len(secret)):
+            if secret[x] != guess[x]:
+                a[int(secret[x])] += 1
+                b[int(guess[x])] += 1
             else:
-                j +=1
-        return f"{A}A{B}B"
+                bulls += 1
+        cows = sum([min(a[x], b[x]) for x in range(10) if a[x] > 0 and b[x] > 0])
+           
+        return f'{bulls}A{cows}B'
 ```
