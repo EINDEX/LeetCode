@@ -38,6 +38,4 @@ class Solution(object):
         """
         return ' '.join(x[::-1] for x in s.split())
         
-
-
 ```
