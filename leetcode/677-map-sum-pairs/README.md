@@ -43,8 +43,8 @@ mapSum.sum(&quot;ap&quot;);           // return 5 (<u>ap</u>ple + <u>ap</u>p = 3
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class MapSum:
 
     def __init__(self):
@@ -66,11 +66,7 @@ class MapSum:
         :type prefix: str
         :rtype: int
         """
-        res = 0
-        for key, value in self.data.items():
-            if key.startswith(prefix):
-                res += value
-        return res
+        return sum([value for key, value in self.data.items() if key.startswith(prefix)])
         
 
 
@@ -78,4 +74,5 @@ class MapSum:
 # obj = MapSum()
 # obj.insert(key,val)
 # param_2 = obj.sum(prefix)
+
 ```
