@@ -62,14 +62,13 @@ class Solution:
         j = len(height) - 1
         m = 0
         while i < j:
-            h = min(height[i], height[j])
-            s = h * (j - i)
+            s = min(height[i], height[j]) * (j - i)
             if s > m:
                 m = s
-            while height[i] <= h and i < j:
-                i += 1
-            while height[j] <= h and i < j:
+            if height[i] > height[j]:
                 j -= 1
+            else:
+                i += 1
         return m
         
 ```
