@@ -51,8 +51,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def constructMaximumBinaryTree(self, nums):
         """
@@ -68,6 +68,5 @@ class Solution:
                 tree.right = self.constructMaximumBinaryTree(nums[i+1:])
             return tree
         
-
 
 ```
