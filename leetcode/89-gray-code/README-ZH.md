@@ -52,8 +52,8 @@ The binary representation of [0,1,3,2] is [00,01,11,10].
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def grayCode(self, n):
         """
@@ -62,4 +62,5 @@ class Solution:
         """
         return [i ^ (i >> 1) for i in range(1 << n)]
         
+
 ```
