@@ -82,4 +82,5 @@ class Solution(object):
 # obj = Solution(nums)
 # param_1 = obj.reset()
 # param_2 = obj.shuffle()
+
 ```
