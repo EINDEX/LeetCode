@@ -69,6 +69,7 @@ public class Solution {
         return Math.max(left, right) + 1;
     }
 }
+
 ```
 ### python3
 ```python3
