@@ -87,13 +87,27 @@ class Solution(object):
         :type head1, head1: ListNode
         :rtype: ListNode
         """
-        if headA is None or headB is None:
-            return None
+        def inner(node):
+            if node:
+                for n in inner(node.next):
+                    yield n
+                yield node
         
-        a, b = headA, headB
-        
-        while a != b:
-            a = a.next if a else headB
-            b = b.next if b else headA
-        return a      
+        a = inner(headA)
+        b = inner(headB)
+        flag = False
+        res = None
+        while True:
+            try:
+                x = next(a)
+                y = next(b)
+                if x == y:
+                    res = x
+                else:
+                    break
+            except:
+                break
+        return res
+           
+                
 ```
