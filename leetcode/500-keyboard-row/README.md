@@ -57,24 +57,17 @@ class Solution(object):
         :rtype: List[str]
         """
         r = []
-        for word in words:
-            if self.word_in_row(word):
-                r.append(word)
-        return r
-    
-    def word_in_row(self,word):
         row = ["qwertyuiop","asdfghjkl","zxcvbnm"]
-        temp = -1
-        for i in range(3):
-            if word.lower()[0] in row[i]:
-                temp = i
-        if temp != -1:
-            for a in word.lower():
-                if a not in row[temp]:
-                    return False
-            return True
-        else:
-            return False
+        for word in words:
+            for i in range(3):
+                flag = True
+                for a in word.lower():
+                    if a not in row[i]:
+                        flag = False
+                if flag:
+                    r.append(word)
+        return r
+                        
                 
             
 ```
