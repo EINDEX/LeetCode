@@ -66,4 +66,5 @@ class Solution(object):
             if p.val == q.val:
                 res = True
         return res and self.isSameTree(p.left,q.left) and self.isSameTree(p.right,q.right)
+
 ```
