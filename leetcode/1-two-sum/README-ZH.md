@@ -57,8 +57,11 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        for x in range(len(nums)):
-            for y in range(x+1 ,len(nums)):
-                if nums[x] + nums[y] ==  target:
-                    return [x, y]
+        for i,x in enumerate(nums):
+            if target - x in nums:
+                i2 = nums.index(target - x)
+                if  i2 != i:
+                    return [i,i2]
+        
+
 ```
