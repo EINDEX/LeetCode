@@ -38,13 +38,19 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        value = 0
-        times = 0
-        for x in nums:
-            if times <= 0:
-                value = x
-                times += 1
+        if not nums:
+            return 0
+        majority = nums[0]
+        count = 1
+        for x in nums[1:]:
+            if x == majority:
+                count += 1
             else:
-                times = times - 1 if value != x else times + 1
-        return value
+                count -= 1
+                if count < 0:
+                    majority = x
+                    count = 0
+        return majority
+
+
 ```
