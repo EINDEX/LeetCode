@@ -37,19 +37,15 @@ Easy
 ```python3
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
-        m = {}
-        vm = {}
-        for i in range(len(s)):
-            if s[i] not in m:
-                m[s[i]] = t[i]
-            else:
-                if m[s[i]] != t[i]:
-                    return False
-            if t[i] not in vm:
-                vm[t[i]] = s[i]
-            else:
-                if vm[t[i]] != s[i]:
-                    return False
+        d = {}
+        rd = {}
+        for a, b in zip(s, t):
+            if a not in d:
+                d[a] = b
+            if b not in rd:
+                rd[b] = a
+            if d[a] != b or rd[b] != a:
+                return False
+            
         return True
-        
 ```
