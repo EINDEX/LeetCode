@@ -74,5 +74,4 @@ class Codec:
 # codec = Codec()
 # codec.decode(codec.encode(url))
 
-
 ```
