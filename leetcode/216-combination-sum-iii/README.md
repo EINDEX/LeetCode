@@ -73,8 +73,8 @@ There are no other valid combinations.
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def combinationSum3(self, k, n):
         """
@@ -104,5 +104,4 @@ class Solution:
         return res
             
         
-
 ```
