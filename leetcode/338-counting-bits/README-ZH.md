@@ -50,14 +50,10 @@ Easy
 
 
 ## Solution
-### python
-```python
-class Solution(object):
-    def countBits(self, num):
-        """
-        :type num: int
-        :rtype: List[int]
-        """
-        return [ bin(x).count('1') for x in xrange(num+1)]
-
+### python3
+```python3
+class Solution:
+    def countBits(self, num: int) -> List[int]:
+        return [bin(x).count('1') for x in range(num+1)]
+            
 ```
