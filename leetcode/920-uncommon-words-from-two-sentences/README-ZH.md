@@ -31,8 +31,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def uncommonFromSentences(self, A, B):
         """
@@ -50,5 +50,4 @@ class Solution:
             da[b] += 1
         return [x for x,v in da.items() if v == 1]
             
-
 ```
