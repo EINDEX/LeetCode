@@ -45,3 +45,16 @@ Note that &#39;A&#39; and &#39;a&#39; are treated as two different characters.
 
 
 ## Solution
+### python3
+```python3
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        m = {}
+        for i in s:
+            m.setdefault(i, 0)
+            m[i] += 1
+        return ''.join([k*v for k,v in sorted(m.items(), key=lambda x:x[1], reverse=True)])
+                
+            
+        
+```
