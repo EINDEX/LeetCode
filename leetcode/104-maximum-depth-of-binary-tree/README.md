@@ -70,8 +70,8 @@ public class Solution {
     }
 }
 ```
-### python
-```python
+### python3
+```python3
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -90,6 +90,5 @@ class Solution:
         
         return 1+ max(self.maxDepth(root.left),self.maxDepth(root.right))
         
-
 
 ```
