@@ -45,8 +45,8 @@ recentCounter.ping(3002);  // requests = [1, <u>100</u>, <u>3001</u>, <u>3002</u
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class RecentCounter:
 
     def __init__(self):
@@ -57,9 +57,14 @@ class RecentCounter:
         :type t: int
         :rtype: int
         """
-        while self.pings and self.pings[0] < t - 3000:
-            self.pings.pop(0)
         self.pings.append(t)
+        for i in range(len(self.pings)):
+            if self.pings[i] >= t-3000:
+                break
+        
+        for x in range(i-1, -1, -1):
+            self.pings.pop(x)
+            
         return len(self.pings)
         
 
@@ -67,5 +72,4 @@ class RecentCounter:
 # Your RecentCounter object will be instantiated and called as such:
 # obj = RecentCounter()
 # param_1 = obj.ping(t)
-
 ```
