@@ -38,14 +38,14 @@ public class Solution {
     }
 }
 ```
-### python
-```python
-class Solution(object):
-    def reverseString(self, s):
+### python3
+```python3
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
         """
-        :type s: str
-        :rtype: str
+        Do not return anything, modify s in-place instead.
         """
-        return s[::-1]
+        for x in range(len(s)//2):
+            s[x], s[-x-1] = s[-x-1],s[x] 
         
 ```
