@@ -36,3 +36,32 @@ Easy
 
 
 ## Solution
+### python3
+```python3
+#
+# @lc app=leetcode.cn id=111 lang=python3
+#
+# [111] 二叉树的最小深度
+#
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def minDepth(self, root: TreeNode) -> int:
+        if not root:
+            return 0
+        def inner(node, depth = 1):
+            if not node:
+                return float('inf')
+            if not node.left and not node.right:
+                return depth
+            return min(inner(node.left, depth+1), inner(node.right, depth+1))
+        return inner(root)
+        
+
+
+```
