@@ -53,7 +53,6 @@ class Solution:
         for i, x in enumerate(list(S)):
             if x not in lattes:
                 if all(i > d[k] for k in list(lattes)) and i != 0:
-                    print(lattes)
                     lattes = set()
                     res.append(i - sum(res))
                     
