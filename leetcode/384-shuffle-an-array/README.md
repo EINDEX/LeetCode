@@ -47,8 +47,8 @@ solution.shuffle();    // Returns the random shuffling of array [1,2,3]. Example
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
 
     def __init__(self, nums):
@@ -75,6 +75,5 @@ class Solution:
         import random
         random.shuffle(self.nums)
         return self.nums
-
 
 ```
