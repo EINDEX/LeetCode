@@ -55,8 +55,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def backspaceCompare(self, S, T):
         """
@@ -77,6 +77,5 @@ class Solution:
                         res += x
             return res
         return get_res(T) == get_res(S)
-
 
 ```
