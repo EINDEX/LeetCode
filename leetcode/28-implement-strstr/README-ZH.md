@@ -36,8 +36,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def strStr(self, haystack, needle):
         """
@@ -52,5 +52,6 @@ class Solution:
             return haystack.index(needle)
         return -1
         
+
 
 ```
