@@ -40,8 +40,8 @@ Medium
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def findAndReplacePattern(self, words, pattern):
         """
@@ -67,4 +67,5 @@ class Solution:
                 res.append(word)
         return res
         
+
 ```
