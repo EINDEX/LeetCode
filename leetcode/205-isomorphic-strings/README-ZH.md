@@ -33,3 +33,21 @@ Easy
 
 
 ## Solution
+### python3
+```python3
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        d = {}
+        rd = {}
+        for x in range(len(s)):
+            if t[x] not in d:
+                d[t[x]] = s[x]
+            elif d[t[x]] != s[x]:
+                return False
+            if s[x] not in rd:
+                rd[s[x]] = t[x]
+            elif rd[s[x]] != t[x]:
+                return False
+            
+        return True
+```
