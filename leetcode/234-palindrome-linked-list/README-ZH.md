@@ -34,8 +34,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -55,5 +55,4 @@ class Solution:
         if res == res[::-1]:
             return True
         return False
-
 ```
