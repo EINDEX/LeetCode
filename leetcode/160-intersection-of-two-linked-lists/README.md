@@ -87,16 +87,27 @@ class Solution(object):
         :type head1, head1: ListNode
         :rtype: ListNode
         """
-        see = set()
-        while headA:
-            see.add(headA)
-            headA = headA.next
+        def inner(node):
+            if node:
+                for n in inner(node.next):
+                    yield n
+                yield node
         
-        while headB:
-            if headB in see:
-                return headB
-            else:
-                headB = headB.next
-        return
+        a = inner(headA)
+        b = inner(headB)
+        flag = False
+        res = None
+        while True:
+            try:
+                x = next(a)
+                y = next(b)
+                if x == y:
+                    res = x
+                else:
+                    break
+            except:
+                break
+        return res
+           
                 
 ```
