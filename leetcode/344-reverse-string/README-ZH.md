@@ -38,9 +38,9 @@ public class Solution {
     }
 }
 ```
-### python3
-```python3
-class Solution:
+### python
+```python
+class Solution(object):
     def reverseString(self, s):
         """
         :type s: str
