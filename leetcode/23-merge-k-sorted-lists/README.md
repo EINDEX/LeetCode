@@ -53,8 +53,8 @@ merging them into one sorted list:
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -105,5 +105,4 @@ class Solution:
         return t
         
         
-
 ```
