@@ -28,8 +28,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def numJewelsInStones(self, J, S):
         """
@@ -40,5 +40,4 @@ class Solution:
         return sum([S.count(x) for x in J])
             
         
-
 ```
