@@ -72,10 +72,6 @@ class Solution:
                 else:
                     break
                 k += 1
-                
-        
-        # 双字符扩展
-        for i in range(l-1):
             k = 0
             while i - k >= 0 and i+1 + k < l:
                 if s[i-k] == s[i+1+k]:
@@ -85,5 +81,6 @@ class Solution:
                 else:
                     break
                 k += 1
+                
         return res
 ```
