@@ -38,3 +38,13 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 
 
 ## Solution
+### python3
+```python3
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        last = 0
+        now = 0
+        for i in nums:
+            last, now = now, max(last + i, now)
+        return now
+```
