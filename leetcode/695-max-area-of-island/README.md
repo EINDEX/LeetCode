@@ -39,8 +39,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def maxAreaOfIsland(self, grid):
         """
@@ -65,5 +65,4 @@ class Solution:
                     res = max(area(x, y), res)
         return res
                 
-
 ```
