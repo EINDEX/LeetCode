@@ -51,8 +51,8 @@ Note that &quot;cdc&quot; is also a longest uncommon subsequence.
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def findLUSlength(self, a, b):
         """
@@ -65,5 +65,4 @@ class Solution:
         else:
             return -1
         
-
 ```
