@@ -52,5 +52,4 @@ class Solution:
             return haystack.index(needle)
         return -1
         
-
 ```
