@@ -76,8 +76,8 @@ M             1000</pre>
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def intToRoman(self, num):
         """
@@ -111,4 +111,5 @@ class Solution:
         num %= 4
         res += (num // 1) * 'I'
         return res
+
 ```
