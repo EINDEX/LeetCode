@@ -42,7 +42,6 @@ func singleNumber(nums []int) int {
 	return res
 }
 
-
 ```
 ### python
 ```python
@@ -58,4 +57,5 @@ class Solution(object):
         for i in nums:
             sum ^=i
         return sum
+
 ```
