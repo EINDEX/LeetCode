@@ -62,7 +62,9 @@ class Solution(object):
         def b():
             x = nums.index(n)
             for c in range(x,len(nums)-1):
+                print c
                 a = nums[c+1]
+                x+=1
                 if a > n:
                     return a
             else:
@@ -71,6 +73,4 @@ class Solution(object):
             ans.append(b())
             
         return ans
-
-
 ```
