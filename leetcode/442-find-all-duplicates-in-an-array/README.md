@@ -49,4 +49,6 @@ class Solution(object):
             else:
                 nums[abs(x)-1] *= -1
         return res
+
+
 ```
