@@ -67,4 +67,5 @@ class Solution(object):
                     return False
             L = line
         return True
+
 ```
