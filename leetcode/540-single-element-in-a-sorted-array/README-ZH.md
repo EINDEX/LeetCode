@@ -38,4 +38,5 @@ class Solution(object):
         return reduce(lambda x,n:x^n ,nums)
         
 
+
 ```
