@@ -41,8 +41,8 @@ Medium
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def matrixScore(self, A):
         """
@@ -69,4 +69,5 @@ class Solution:
             s += max(len(A) - line_s, line_s) * (2**(len(A[0])-y-1))
         return s
             
+
 ```
