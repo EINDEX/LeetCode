@@ -35,7 +35,7 @@ class Solution:
         :type s: str
         :rtype: str
         """
-        yuan = set('aeiouAEIOU')
+        yuan = ('a', 'e', 'i', 'o', 'u', 'A','E','I','O', 'U')
         s = list(s)
         a, b = 0, len(s) - 1
         while a < b:
