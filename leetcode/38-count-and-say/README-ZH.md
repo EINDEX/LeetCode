@@ -48,8 +48,8 @@ countAndSay(4) = say &quot;21&quot; = one 2 + one 1 = &quot;12&quot; + &quot;11&
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def countAndSay(self, n):
         """
@@ -81,5 +81,4 @@ class Solution:
         else:
             return inner(x, n-1)
         
-
 ```
