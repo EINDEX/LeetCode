@@ -39,8 +39,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def transpose(self, A):
         """
@@ -50,4 +50,5 @@ class Solution:
         return [[A[x][y] for x in range(len(A))] for y in range(len(A[0]))]
         
         
+
 ```
