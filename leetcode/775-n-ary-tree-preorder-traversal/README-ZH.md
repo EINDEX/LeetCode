@@ -60,7 +60,7 @@ class Solution(object):
         if not root:
             return []
         res = []
-        res.append(root.val)
+        res+=[root.val]
         if root.children:
             for c in root.children:
                 res += self.preorder(c)      
