@@ -47,8 +47,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def twoSum(self, numbers, target):
         """
@@ -65,4 +65,5 @@ class Solution:
                 i1 += 1
             else:
                 return [i1+1, i2+1]
+
 ```
