@@ -53,3 +53,25 @@ Therefore, you can&#39;t travel around the circuit once no matter where you star
 
 
 ## Solution
+### python3
+```python3
+class Solution:
+    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+        a = []
+        for i in range(len(gas)):
+            a.append(gas[i] - cost[i])
+
+        if sum(a) < 0:
+            return -1
+
+        start = 0
+        all_money = 0
+        for i in range(len(a)):
+            all_money += a[i]
+            if all_money < 0:
+                all_money = 0
+                start = i+1
+
+        if start < len(a):
+            return start
+```
