@@ -54,8 +54,8 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def pivotIndex(self, nums):
         """
@@ -72,8 +72,6 @@ class Solution:
             if i < len(nums) - 1:
                 rs -= nums[i+1]
         return -1
-
-
 
 
 ```
