@@ -40,8 +40,6 @@ class Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        res = [i for i in A if i % 2 == 0]
-        res += [i for i in A if i % 2 == 1]
-        return res
+        return [i for i in A if i % 2 == 0] + [i for i in A if i % 2 == 1]
         
 ```
