@@ -62,23 +62,14 @@ Therefore, sum = 495 + 491 + 40 = <code>1026</code>.
 #         self.right = None
 
 class Solution:
-    def sumNumbers(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        if not root:
+    def sumNumbers(self, root: TreeNode) -> int:
+        return self.answer(root)
+        
+    def answer(self, node: TreeNode, value:int = 0) -> int:
+        if node is None:
             return 0
-        res = []
-        def inner(x, node):
-            x = x * 10 + node.val
-            if node.left:
-                inner(x, node.left)
-            if node.right:
-                inner(x, node.right)
-            if not node.left and not node.right:
-                res.append(x)
-       
-        inner(0, root)
-        return sum(res)
+        value = value*10 + node.val
+        if node.left is None and node.right is None:
+            return value
+        return self.answer(node.left, value) + self.answer(node.right, value)
 ```
