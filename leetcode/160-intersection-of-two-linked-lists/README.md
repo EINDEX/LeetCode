@@ -87,13 +87,13 @@ class Solution(object):
         :type head1, head1: ListNode
         :rtype: ListNode
         """
-        if not headA or not headB:
+        if headA is None or headB is None:
             return None
+        
         a, b = headA, headB
+        
         while a != b:
             a = a.next if a else headB
             b = b.next if b else headA
-        return a
-           
-                
+        return a      
 ```
