@@ -58,8 +58,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def smallestRangeI(self, A, K):
         """
@@ -79,4 +79,5 @@ class Solution:
         else:
             return M-m-2*K
         
+
 ```
