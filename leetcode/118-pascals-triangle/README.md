@@ -48,7 +48,6 @@ func generate(numRows int) [][]int {
 }
 
 
-
 ```
 ### python3
 ```python3
