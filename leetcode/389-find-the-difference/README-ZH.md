@@ -73,4 +73,5 @@ class Solution(object):
             if v != 0:
                 return k
         return
+
 ```
