@@ -45,8 +45,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def isAlienSorted(self, words, order):
         """
@@ -70,4 +70,5 @@ class Solution:
                 return False
             temp = c
         return True
+
 ```
