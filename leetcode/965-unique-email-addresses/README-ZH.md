@@ -57,8 +57,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def numUniqueEmails(self, emails):
         """
@@ -71,5 +71,4 @@ class Solution:
             res.add(local.split('+')[0].replace('.','')+'@'+host)
         return len(res)
             
-
 ```
