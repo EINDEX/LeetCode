@@ -31,6 +31,7 @@ Easy
 </ul>
 
 
+
 ## Solution
 ### python
 ```python
@@ -44,12 +45,3 @@ class Solution(object):
         return list(set(nums1) & set(nums2))
 
 ```
-### python3
-```python3
-class Solution:
-    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        return set(nums1) & set(nums2)
-```
-
-## Author
-EINDEX
