@@ -94,5 +94,4 @@ class Solution(object):
                 R=mid-1
         return L
 
-
 ```
