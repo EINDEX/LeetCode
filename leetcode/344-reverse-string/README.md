@@ -45,9 +45,7 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        l, h = 0, len(s)-1
-        while l < h:
-            s[l], s[h] = s[h], s[l]
-            l, h = l+1, h-1
+        for x in range(len(s)//2):
+            s[x], s[-x-1] = s[-x-1],s[x] 
         
 ```
