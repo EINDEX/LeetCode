@@ -78,4 +78,5 @@ class Solution:
             else:
                 x = n
         return len(nums)
+
 ```
