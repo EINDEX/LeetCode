@@ -27,8 +27,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def partition(self, s):
         """
@@ -52,5 +52,4 @@ class Solution:
         inner([], s)
         return res
         
-
 ```
