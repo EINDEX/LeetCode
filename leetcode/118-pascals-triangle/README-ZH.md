@@ -47,5 +47,4 @@ func generate(numRows int) [][]int {
 	return res
 }
 
-
 ```
