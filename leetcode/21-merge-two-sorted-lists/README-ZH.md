@@ -40,8 +40,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -76,4 +76,5 @@ class Solution:
             l1 = l1.next 
                         
         return head
+
 ```
