@@ -57,21 +57,18 @@ Note that the result table has 13 columns (1 for the department id + 12 for the 
 # Write your MySQL query statement below
 select 
 id,
-sum(If(month='Jan', revenue, null)) as Jan_Revenue,
-sum(If(month='Feb', revenue, null)) as Feb_Revenue,
-sum(If(month='Mar', revenue, null)) as Mar_Revenue,
-sum(If(month='Apr', revenue, null)) as Apr_Revenue,
-sum(If(month='May', revenue, null)) as May_Revenue,
-sum(If(month='Jun', revenue, null)) as Jun_Revenue,
-sum(If(month='Jul', revenue, null)) as Jul_Revenue,
-sum(If(month='Aug', revenue, null)) as Aug_Revenue,
-sum(If(month='Sep', revenue, null)) as Sep_Revenue,
-sum(If(month='Oct', revenue, null)) as Oct_Revenue,
-sum(If(month='Nov', revenue, null)) as Nov_Revenue,
-sum(If(month='Dec', revenue, null)) as Dec_Revenue
+sum(case when month='Jan' then revenue else null end) as Jan_Revenue,
+sum(case when month='Feb' then revenue else null end) as Feb_Revenue,
+sum(case when month='Mar' then revenue else null end) as Mar_Revenue,
+sum(case when month='Apr' then revenue else null end) as Apr_Revenue,
+sum(case when month='May' then revenue else null end) as May_Revenue,
+sum(case when month='Jun' then revenue else null end) as Jun_Revenue,
+sum(case when month='Jul' then revenue else null end) as Jul_Revenue,
+sum(case when month='Aug' then revenue else null end) as Aug_Revenue,
+sum(case when month='Sep' then revenue else null end) as Sep_Revenue,
+sum(case when month='Oct' then revenue else null end) as Oct_Revenue,
+sum(case when month='Nov' then revenue else null end) as Nov_Revenue,
+sum(case when month='Dec' then revenue else null end) as Dec_Revenue
 from Department 
 group by id
-
-
-
 ```
