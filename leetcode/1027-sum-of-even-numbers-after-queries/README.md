@@ -98,15 +98,19 @@ class Solution:
         res = []
         s = sum([x for x in A if x % 2 == 0])
         for i in queries:
-            if A[i[1]] % 2 == 0 and i[0] % 2 == 0:
-                s += i[0]
-            elif A[i[1]] % 2 and i[0] % 2:
-                s += A[i[1]] + i[0]
-            elif A[i[1]] % 2 == 0 and i[0] % 2:
-                s -= A[i[1]]
+            if A[i[1]] % 2 == 0:
+                if i[0] % 2 == 0:
+                    s += i[0]
+                else:
+                    s -= A[i[1]]
+            else:
+                if i[0] % 2:
+                    s += A[i[1]] + i[0]
+                
             A[i[1]] += i[0]
             res.append(s)
 
         return res      
+
 
 ```
