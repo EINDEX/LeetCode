@@ -39,8 +39,8 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def maxProfit(self, prices):
         """
@@ -58,4 +58,5 @@ class Solution:
         return maxprofit
         
         
+
 ```
