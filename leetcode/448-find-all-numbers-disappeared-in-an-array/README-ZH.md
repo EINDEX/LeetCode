@@ -29,8 +29,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def findDisappearedNumbers(self, nums):
         """
@@ -39,5 +39,6 @@ class Solution:
         """
         
         return list({x for x in range(1,len(nums)+1)} - set(nums)) if nums else []
+
 
 ```
