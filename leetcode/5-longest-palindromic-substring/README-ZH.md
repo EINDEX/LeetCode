@@ -47,8 +47,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def longestPalindrome(self, s):
         """
@@ -74,5 +74,4 @@ class Solution:
                 max_len = 2*k+2
                 k += 1   
         return s[start:start+max_len]
-
 ```
