@@ -71,8 +71,8 @@ Medium
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def minAddToMakeValid(self, S):
         """
@@ -91,4 +91,5 @@ class Solution:
                 
         return len(stack)
         
+
 ```
