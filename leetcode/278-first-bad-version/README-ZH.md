@@ -40,8 +40,8 @@ Then 4 is the first bad version.
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 # The isBadVersion API is already defined for you.
 # @param version, an integer
 # @return a bool
@@ -64,5 +64,4 @@ class Solution:
         
         return l
         
-
 ```
