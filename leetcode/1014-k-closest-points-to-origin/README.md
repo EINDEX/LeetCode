@@ -106,7 +106,7 @@ class Solution:
         """
         h = []
         for p in points:
-            heappush(h, (p[0]*p[0]+p[1]*p[1], p))
+            heappush(h, (p[0]**2+p[1]**2, p))
         return [heappop(h)[1] for _ in range(K)]
         
 
