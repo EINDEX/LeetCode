@@ -38,8 +38,8 @@ A partition like &quot;ababcbacadefegde&quot;, &quot;hijhklij&quot; is incorrect
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def partitionLabels(self, S):
         """
@@ -53,6 +53,7 @@ class Solution:
         for i, x in enumerate(list(S)):
             if x not in lattes:
                 if all(i > d[k] for k in list(lattes)) and i != 0:
+                    print(lattes)
                     lattes = set()
                     res.append(i - sum(res))
                     
@@ -61,6 +62,6 @@ class Solution:
             res.append(len(S)-sum(res))
         else:
             res.append(len(S))
+        print(res)
         return res
-
 ```
