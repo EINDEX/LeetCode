@@ -37,8 +37,7 @@ class Solution:
         :type nums: List[int]
         :rtype: List[int]
         """
-        if nums:
-            return list({x for x in range(1,len(nums)+1)} - set(nums))
-        else: return []
+        
+        return list({x for x in range(1,len(nums)+1)} - set(nums)) if nums else []
 
 ```
