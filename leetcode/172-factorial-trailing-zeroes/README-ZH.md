@@ -42,8 +42,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def trailingZeroes(self, n):
         """
@@ -59,6 +59,7 @@ class Solution:
             res += k
             count += 1
         return res
+
 
 
 ```
