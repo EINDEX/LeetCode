@@ -42,8 +42,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def addStrings(self, num1, num2):
         """
@@ -52,6 +52,5 @@ class Solution:
         :rtype: str
         """
         return str(int(num1) + int(num2))
-
 
 ```
