@@ -66,11 +66,7 @@ class MapSum:
         :type prefix: str
         :rtype: int
         """
-        res = 0
-        for key, value in self.data.items():
-            if key.startswith(prefix):
-                res += value
-        return res
+        return sum([value for key, value in self.data.items() if key.startswith(prefix)])
         
 
 
