@@ -60,4 +60,5 @@ class Solution(object):
         """
         return [ bin(x).count('1') for x in xrange(num+1)]
 
+
 ```
