@@ -59,6 +59,7 @@ class Solution(object):
             dfs(node.right, depth + 1)
             
         dfs(root)
+        print info
         for x in info[::-1]:
             if x is not None:
                 return x
