@@ -42,8 +42,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def sortArrayByParityII(self, A):
         """
@@ -63,4 +63,5 @@ class Solution:
                     A[a], A[b] = A[b], A[a]
         return A    
         
+
 ```
