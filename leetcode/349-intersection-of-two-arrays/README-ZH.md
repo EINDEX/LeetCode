@@ -43,4 +43,5 @@ class Solution(object):
         :rtype: List[int]
         """
         return list(set(nums1) & set(nums2))
+
 ```
