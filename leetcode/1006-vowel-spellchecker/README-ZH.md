@@ -57,8 +57,8 @@ Medium
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 import re
 
 class Solution:
@@ -102,4 +102,5 @@ class Solution:
         return res
             
         
+
 ```
