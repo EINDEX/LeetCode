@@ -42,8 +42,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def combine(self, n, k):
         """
@@ -64,5 +64,4 @@ class Solution:
         inner([], 1, k)
         return res
         
-
 ```
