@@ -57,14 +57,9 @@ class RecentCounter:
         :type t: int
         :rtype: int
         """
+        while self.pings and self.pings[0] < t - 3000:
+            self.pings.pop(0)
         self.pings.append(t)
-        for i in range(len(self.pings)):
-            if self.pings[i] >= t-3000:
-                break
-        
-        for x in range(i-1, -1, -1):
-            self.pings.pop(x)
-            
         return len(self.pings)
         
 
