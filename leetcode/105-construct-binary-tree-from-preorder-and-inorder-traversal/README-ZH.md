@@ -37,8 +37,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -62,9 +62,8 @@ class Solution:
         if l:
             root.left = self.buildTree(preorder[1:1+l],inorder[:l])
         if r:
-            root.right = self.buildTree(preorder[-r:],inorder[-r:])
+            root.right = self.buildTree(preorder[1+l:],inorder[l+1:])
         return root
             
         
-
 ```
