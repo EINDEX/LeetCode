@@ -59,4 +59,5 @@ class Solution(object):
         :rtype: int
         """
         return str(bin(n)).count('1')
+
 ```
