@@ -71,4 +71,5 @@ class Solution(object):
             ans.append(b())
             
         return ans
+
 ```
