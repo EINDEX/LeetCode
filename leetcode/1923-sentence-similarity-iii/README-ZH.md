@@ -52,7 +52,5 @@ Medium
 </ul>
 
 
-## Solution
 
-## Author
-EINDEX
+## Solution
