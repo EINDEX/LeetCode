@@ -56,9 +56,25 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[str]
         """
-        a, b, c = set('qwertyuiop'), set('asdfghjkl'), set('zxcvbnm')
-        f = lambda x,y : set(x.lower()).issubset(y)
-        return  [w for w in words if f(w,a) or f(w,b) or f(w,c)]
-        
-
+        r = []
+        for word in words:
+            if self.word_in_row(word):
+                r.append(word)
+        return r
+    
+    def word_in_row(self,word):
+        row = ["qwertyuiop","asdfghjkl","zxcvbnm"]
+        temp = -1
+        for i in range(3):
+            if word.lower()[0] in row[i]:
+                temp = i
+        if temp != -1:
+            for a in word.lower():
+                if a not in row[temp]:
+                    return False
+            return True
+        else:
+            return False
+                
+            
 ```
