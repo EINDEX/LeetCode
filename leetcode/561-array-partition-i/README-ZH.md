@@ -48,4 +48,6 @@ class Solution(object):
         """
         return sum(sorted(nums)[::2])
     
+
+
 ```
