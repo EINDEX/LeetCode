@@ -52,5 +52,4 @@ class Solution(object):
             queue += filter(None, (node.right, node.left))
         return node.val
         
-
 ```
