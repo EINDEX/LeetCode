@@ -42,13 +42,9 @@ Easy
 ### golang
 ```golang
 func uniqueOccurrences(arr []int) bool {
-    c := make(map[int]int, len(arr))
+    c := map[int]int{}
     for _, x := range arr {
-        if _, ok := c[x]; !ok {
-            c[x] = 1
-        } else {
-            c[x]++
-        }
+        c[x]++
     }
 
     r := make(map[int]int, len(c))
