@@ -50,17 +50,17 @@ Easy
 ## Solution
 ### python
 ```python
-class Solution(object):
+class Solution:
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-        cache = {}
-        for i, val in enumerate(nums):
-            if val in cache:
-                return [cache[val], i]
-            else:
-                cache[target-val] = i
+        data = {}
+        for i, x in enumerate(nums):
+            if target - x in data:
+                return [data[target-x], i]
+            data[x] = i
+
 ```
