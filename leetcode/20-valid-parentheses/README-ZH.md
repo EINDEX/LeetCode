@@ -60,8 +60,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def isValid(self, s):
         """
@@ -89,4 +89,5 @@ class Solution:
         if stack:
             return False
         return True
+
 ```
