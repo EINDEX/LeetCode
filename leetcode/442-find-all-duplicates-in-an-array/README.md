@@ -50,4 +50,5 @@ class Solution(object):
                 nums[abs(x)-1] *= -1
         return res
 
+
 ```
