@@ -44,9 +44,9 @@ func singleNumber(nums []int) int {
 
 
 ```
-### python
-```python
-class Solution(object):
+### python3
+```python3
+class Solution:
     def singleNumber(self, nums):
         """
         :type nums: List[int]
@@ -57,5 +57,6 @@ class Solution(object):
         sum = 0
         for i in nums:
             sum ^=i
-        return sum
+        return sum 
+
 ```
