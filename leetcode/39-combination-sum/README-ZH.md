@@ -76,7 +76,7 @@ class Solution:
         def inner(nums,low_value, candidates, target):
             if target == 0:
                 res.append(nums)
-            elif target < low_value:
+            elif target < 0:
                 return
             for x in candidates:
                 if x >= low_value:
