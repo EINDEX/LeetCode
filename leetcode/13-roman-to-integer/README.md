@@ -78,8 +78,8 @@ M             1000</pre>
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def romanToInt(self, s):
         """
@@ -108,5 +108,4 @@ class Solution:
                 s = s[1:]
         return res
         
-
 ```
