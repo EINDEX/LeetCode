@@ -51,8 +51,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def numsSameConsecDiff(self, N, K):
         """
@@ -82,5 +82,4 @@ class Solution:
             inner(n, N-1, K)
         return res     
         
-
 ```
