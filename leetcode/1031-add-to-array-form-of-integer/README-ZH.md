@@ -124,12 +124,21 @@ Easy
 #
 class Solution:
     def addToArrayForm(self, A: 'List[int]', K: 'int') -> 'List[int]':
-        a = 0
-        B = A[::-1]
-        for x in range(len(A)):
-            a += B[x] * (10 ** x)
-        r = a + K
-        return [ int(i) for i in list(str(r))]
+        A[-1] += K
+        flag = 0
+        for x in range(len(A)-1, -1, -1):
+            if flag:
+                A[x] += flag
+                flag = 0
+            flag = A[x] // 10
+            A[x] = A[x] % 10
+        if flag:
+            if flag >= 10:
+                return [int(i) for i in list(str(flag))] + A
+            else:
+                return [flag] + A
+        else:
+            return A
 
 
 ```
