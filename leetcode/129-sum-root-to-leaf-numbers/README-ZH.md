@@ -52,8 +52,8 @@ Therefore, sum = 495 + 491 + 40 = <code>1026</code>.
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -81,4 +81,5 @@ class Solution:
        
         inner(0, root)
         return sum(res)
+
 ```
