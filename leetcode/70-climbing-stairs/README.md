@@ -40,8 +40,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def climbStairs(self, n):
         """
@@ -52,5 +52,4 @@ class Solution:
         for _ in range(n):
             a, b = b, a+b
         return b
-
 ```
