@@ -66,4 +66,5 @@ class Solution(object):
             else:
                 b+=n
         return int(a[:-1]),int(b)
+
 ```
