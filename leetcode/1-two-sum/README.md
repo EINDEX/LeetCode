@@ -48,8 +48,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def twoSum(self, nums, target):
         """
@@ -62,5 +62,4 @@ class Solution:
             if target - x in data:
                 return [data[target-x], i]
             data[x] = i
-
 ```
