@@ -74,5 +74,4 @@ class Solution(object):
                 return k
         return
 
-
 ```
