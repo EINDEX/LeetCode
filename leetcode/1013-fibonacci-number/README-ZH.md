@@ -52,16 +52,10 @@ F(n) = F(n - 1) + F(n - 2), for n &gt; 1.
 ```python3
 class Solution:
     def fib(self, N: int) -> int:
-        if N == 0:
+        if N == 1:
+            return 1
+        elif N == 0:
             return 0
-        a, b = 0, 1
-        for _ in range(N-1):
-            a, b = b, a+b
-        return b
-        # if N == 1:
-        #     return 1
-        # elif N == 0:
-        #     return 0
-        # return self.fib(N-1) + self.fib(N-2)
+        return self.fib(N-1) + self.fib(N-2)
         
 ```
