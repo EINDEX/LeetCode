@@ -65,4 +65,5 @@ class Solution:
         s = ((len(nums) + 0) * (len(nums)+1)//2)
         return s - sum(nums)
 
+
 ```
