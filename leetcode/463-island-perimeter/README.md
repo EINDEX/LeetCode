@@ -76,4 +76,5 @@ class Solution(object):
                     s += 4 - count
         return s
         
+
 ```
