@@ -55,3 +55,9 @@ Hence, you should return &quot;What is the solution&quot;.</pre>
 
 
 ## Solution
+### python3
+```python3
+class Solution:
+    def truncateSentence(self, s: str, k: int) -> str:
+        return ' '.join(s.split()[:k])
+```
