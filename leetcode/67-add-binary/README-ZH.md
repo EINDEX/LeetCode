@@ -26,8 +26,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def addBinary(self, a, b):
         """
@@ -36,7 +36,5 @@ class Solution:
         :rtype: str
         """
         return str(bin(int(a, 2) + int(b, 2))).replace('0b', '')
-
-
 
 ```
