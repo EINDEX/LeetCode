@@ -57,8 +57,8 @@ Since all the cards revealed are in increasing order, the answer is correct.
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def deckRevealedIncreasing(self, deck):
         """
@@ -74,4 +74,5 @@ class Solution:
             res = [x] + res
         return res
         
+
 ```
