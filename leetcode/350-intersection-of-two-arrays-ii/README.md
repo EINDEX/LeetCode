@@ -42,8 +42,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def intersect(self, nums1, nums2):
         """
@@ -66,4 +66,6 @@ class Solution:
                 res.append(x)
                 
         return res
+
+
 ```
