@@ -50,8 +50,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def countPrimeSetBits(self, L, R):
         """
@@ -65,5 +65,4 @@ class Solution:
             if bin(x).count('1') in p:
                 res += 1
         return res
-
 ```
