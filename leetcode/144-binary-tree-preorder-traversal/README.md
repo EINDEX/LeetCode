@@ -56,8 +56,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -75,4 +75,5 @@ class Solution:
             return []
         return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right)
         
+
 ```
