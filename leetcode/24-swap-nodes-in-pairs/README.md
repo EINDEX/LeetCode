@@ -39,8 +39,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -48,20 +48,12 @@ Medium
 #         self.next = None
 
 class Solution:
-    def swapPairs(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
-        if head and head.next:
-            t = self.swapPairs(head.next.next)
-        else:
+    def swapPairs(self, head: ListNode) -> ListNode:
+        if not head or not head.next:
             return head
-        # print(t.val)
         a = head
         b = head.next
+        a.next = self.swapPairs(b.next)
         b.next = a
-        a.next = t
         return b
-
 ```
