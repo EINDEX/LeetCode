@@ -39,8 +39,8 @@ Medium
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def sortColors(self, nums):
         n = len(nums)
@@ -59,5 +59,4 @@ class Solution:
                 nums[gt], nums[i] = nums[i], nums[gt]
             else:
                 i += 1
-
 ```
