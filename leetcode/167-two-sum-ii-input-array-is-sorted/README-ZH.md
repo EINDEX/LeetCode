@@ -47,18 +47,20 @@ Easy
 
 
 ## Solution
-### python3
-```python3
-class Solution:
+### python
+```python
+class Solution(object):
     def twoSum(self, numbers, target):
         """
         :type numbers: List[int]
         :type target: int
         :rtype: List[int]
         """
-        data = {}
-        for i, x in enumerate(numbers):
-            if target - x in data:
-                return [data[target-x]+1, i+1]
-            data[x] = i
+        cache = {}
+        for i, val in enumerate(numbers):
+            if val in cache:
+                return sorted([cache[val], i+1])
+            else:
+                cache[target-val] = i+1
+        
 ```
