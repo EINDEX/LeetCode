@@ -54,8 +54,8 @@ Sum of every tilt : 0 + 0 + 0 + 2 + 7 + 6 = 15
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -81,6 +81,5 @@ class Solution:
                 res += rr
                 return root.val + l + r, abs(l-r) + res
         return _inner(root)[1]
-
 
 ```
