@@ -69,7 +69,6 @@ public class Solution {
         return Math.max(left, right) + 1;
     }
 }
-
 ```
 ### python3
 ```python3
@@ -91,4 +90,5 @@ class Solution:
         
         return 1+ max(self.maxDepth(root.left),self.maxDepth(root.right))
         
+
 ```
