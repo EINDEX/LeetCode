@@ -1,6 +1,6 @@
 # The isBadVersion API is already defined for you.
 # @param version, an integer
-# @return an integer
+# @return a bool
 # def isBadVersion(version):
 
 class Solution:
@@ -9,15 +9,14 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        l, h = 1, n
-        i = l + h // 2
-        f = False
+        l = 1
+        h = n
         while l < h:
-            if not isBadVersion(i):
-                l = i + 1
-                f = True   
-            elif isBadVersion(i):
-                h = i - 1
-                f = False
-            i = l + (h-l)//2
-        return i + int(not isBadVersion(i))
+            m = l + (h - l) // 2
+            if not isBadVersion(m):
+                l = m + 1
+            else:
+                h = m
+        
+        return l
+        
