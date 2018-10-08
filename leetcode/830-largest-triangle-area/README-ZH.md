@@ -34,8 +34,8 @@ Easy
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def largestTriangleArea(self, points):
         """
@@ -49,5 +49,4 @@ class Solution:
         return max(area(*triangle)
             for triangle in itertools.combinations(points, 3))
         
-
 ```
