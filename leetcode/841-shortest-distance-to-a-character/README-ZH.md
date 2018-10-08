@@ -40,8 +40,8 @@ The closest occurrence of &#39;e&#39; for index 8 is at index 6, so the distance
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def shortestToChar(self, S, C):
         """
@@ -68,5 +68,4 @@ class Solution:
                 res[x] = last_C - x
         
         return res
-
 ```
