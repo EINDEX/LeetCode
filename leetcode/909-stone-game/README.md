@@ -39,8 +39,8 @@ This demonstrated that taking the first 5 was a winning move for Alex, so we ret
 
 
 ## Solution
-### python
-```python
+### python3
+```python3
 class Solution:
     def stoneGame(self, piles):
         """
@@ -48,5 +48,4 @@ class Solution:
         :rtype: bool
         """
         return True
-
 ```
