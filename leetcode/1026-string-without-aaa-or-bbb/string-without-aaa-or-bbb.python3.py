@@ -82,4 +82,3 @@ class Solution:
                 B -= 1
         return res
         
-
