@@ -68,4 +68,3 @@ class Solution:
                 if all([r[x] == A[x] for x in range(4)]):
                     return x + ':' + y 
         return ''
-
