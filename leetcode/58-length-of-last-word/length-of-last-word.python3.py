@@ -35,4 +35,3 @@ class Solution:
             return 0
         return len(r[-1])
         
-
