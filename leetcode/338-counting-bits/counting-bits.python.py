@@ -1,0 +1,8 @@
+class Solution(object):
+    def countBits(self, num):
+        """
+        :type num: int
+        :rtype: List[int]
+        """
+        return [ bin(x).count('1') for x in xrange(num+1)]
+
