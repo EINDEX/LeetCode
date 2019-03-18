@@ -27,8 +27,8 @@ Easy
 
 
 ## Solution
-### python3
-```python3
+### python
+```python
 class Solution:
     def reverseVowels(self, s):
         """
@@ -51,4 +51,5 @@ class Solution:
         return ''.join(s)
         
         
+
 ```
