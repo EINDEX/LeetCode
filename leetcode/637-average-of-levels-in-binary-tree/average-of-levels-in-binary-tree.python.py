@@ -27,3 +27,4 @@ class Solution(object):
         
         return [s/float(c) for s,c in info]
         
+
