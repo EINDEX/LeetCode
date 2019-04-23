@@ -2,6 +2,6 @@
 select c.Name as Customers
 from Customers as c 
 where c.Id not in (
-    select CustomerId
+    select distinct(CustomerId) 
     from Orders 
 )
