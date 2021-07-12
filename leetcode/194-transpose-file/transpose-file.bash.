@@ -1,0 +1,2 @@
+# Read from the file file.txt and print its transposed content to stdout.
+python3 -c 'print("\n".join(map(" ".join,zip(*map(str.split,open("file.txt").readlines())))))'
