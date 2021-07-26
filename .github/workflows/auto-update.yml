@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Upload Python Package
+name: Update Leetcode status
 
 on:
   schedule:
@@ -28,4 +28,8 @@ jobs:
           wget -O lc-tool.tar.gz https://github.com/EINDEX/leetcode-spider-go/releases/download/v1.0.2/lc-tool-v1.0.2-linux-amd64.tar.gz
           tar -zxvf lc-tool.tar.gz
           ./lc-tool
-          
+      
+      - name: Git update
+        run: |
+          git add .
+          git push -r
