@@ -11,6 +11,8 @@ name: Update Leetcode status
 on:
   schedule:
     - cron: '0 20 * * *'
+    
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -19,7 +21,7 @@ jobs:
       - name: Configure Git user
         uses: Homebrew/actions/git-user-config@master
         with:
-          token: ${{ secrets.GITHUB_API_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
       
