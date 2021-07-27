@@ -18,6 +18,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Configure Git user
+        uses: Homebrew/actions/git-user-config@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Checkout
         uses: actions/checkout@v2
       
