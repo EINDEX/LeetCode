@@ -18,10 +18,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Configure Git user
-        uses: Homebrew/actions/git-user-config@master
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
       
@@ -30,11 +26,6 @@ jobs:
           LCTOOL_LEETCODE_USERNAME: ${{ secrets.LCTOOL_LEETCODE_USERNAME }}
           LCTOOL_LEETCODE_PASSWORD: ${{ secrets.LCTOOL_LEETCODE_PASSWORD }}
         run: |
-          wget -O lc-tool.tar.gz https://github.com/EINDEX/leetcode-spider-go/releases/download/v1.0.2/lc-tool-v1.0.2-linux-amd64.tar.gz
+          wget -O lc-tool.tar.gz `curl -s https://api.github.com/repos/eindex/leetcode-spider-go/releases/latest | jq -r '.assets[] | select(.browser_download_url | contains("linux-amd64")) | .browser_download_url' | grep -v md5`
           tar -zxvf lc-tool.tar.gz
           ./lc-tool
-      
-      - name: Git update
-        run: |
-          git add .
-          git push -r
